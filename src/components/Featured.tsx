@@ -21,9 +21,9 @@ function Featured() {
 
             {/* Text Container */}
             <div className="flex flex-1 flex-col items-center justify-center gap-4 text-center">
-              <h1 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">
+              <h2 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">
                 {item.title}
-              </h1>
+              </h2>
               <p className="p-4 2xl:p-8">{item.desc}</p>
               <span className="text-xl font-bold">${item.price}</span>
               <button className="rounded-md bg-red-500 px-4 py-2 text-white">
