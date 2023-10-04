@@ -24,18 +24,18 @@ const data = [
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-    // useEffect(() => {
-    //   const sliderInterval = setInterval(
-    //     () =>
-    //       setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1)),
-    //     2000,
-    //   );
+  // useEffect(() => {
+  //   const sliderInterval = setInterval(
+  //     () =>
+  //       setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1)),
+  //     2000,
+  //   );
 
-    //   return () => clearInterval(sliderInterval);
-    // }, []);
+  //   return () => clearInterval(sliderInterval);
+  // }, []);
 
   return (
-    <div className="flex h-[calc(100vh-6rem)] flex-col bg-fuchsia-50 md:h-[calc(100vh-9rem)] lg:flex-row">
+    <section className="flex h-[calc(100vh-6rem)] flex-col bg-fuchsia-50 md:h-[calc(100vh-9rem)] lg:flex-row">
       {/* Text Container */}
       <div className="flex flex-1 flex-col items-center justify-center gap-8 font-bold text-red-500 ">
         <h1 className="p-4 text-center text-3xl uppercase md:p-10 md:text-5xl xl:text-7xl">
@@ -53,7 +53,7 @@ function Slider() {
           className="object-cover"
         />
       </div>
-    </div>
+    </section>
   );
 }
 
