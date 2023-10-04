@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   next:
-    specifier: latest
+    specifier: ^13.5.3
     version: 13.5.3(react-dom@18.2.0)(react@18.2.0)
   react:
     specifier: latest
