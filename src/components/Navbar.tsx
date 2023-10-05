@@ -36,7 +36,9 @@ function Navbar() {
         ) : (
           <Link href="/order">Menu</Link>
         )}
-        <CartIcon />
+        <Link href="/cart">
+          <CartIcon />
+        </Link>
       </div>
     </nav>
   );
