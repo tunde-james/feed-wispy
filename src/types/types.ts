@@ -9,9 +9,9 @@ export type MenuType = {
 
 export type ProductType = {
   id: string;
-  slug: string;
   title: string;
   desc?: string;
   img?: string;
-  color: string;
-}[];
+  price: number;
+  options?: { title: string; additionalPrice: number }[];
+};

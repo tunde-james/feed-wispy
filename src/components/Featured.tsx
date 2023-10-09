@@ -25,7 +25,7 @@ async function Featured() {
       <div className="flex w-max">
         {/* Single Item */}
         {featuredProducts.map((item) => (
-          <div 
+          <div
             key={item.id}
             className="flex h-[60vh] w-screen flex-col items-center justify-around p-4 transition-all duration-300 hover:bg-fuchsia-50 md:w-[50vw] xl:h-[90vh] xl:w-[33vw]"
           >
