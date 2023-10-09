@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { menu } from "@/data";
 
-function MenuPage() {
+
+
+async function MenuPage() {
   return (
     <main className="flex h-[calc(100vh-6rem)] flex-col items-center p-4 md:h-[calc(100vh-9rem)] md:flex-row lg:px-20 xl:px-40">
       {menu.map((category) => (

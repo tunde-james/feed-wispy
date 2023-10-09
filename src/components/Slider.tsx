@@ -7,32 +7,32 @@ const data = [
   {
     id: 1,
     title: "always fresh & always crispy & always hot",
-    image: "/images/slide1.png",
+    image: "/slide1.png",
   },
   {
     id: 2,
     title: "we deliver your order wherever you are in Lagos",
-    image: "/images/slide2.png",
+    image: "/slide2.png",
   },
   {
     id: 1,
     title: "the best pizza to share with your family",
-    image: "/images/slide3.jpg",
+    image: "/slide3.jpg",
   },
 ];
 
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-  // useEffect(() => {
-  //   const sliderInterval = setInterval(
-  //     () =>
-  //       setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1)),
-  //     2000,
-  //   );
+  useEffect(() => {
+    const sliderInterval = setInterval(
+      () =>
+        setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1)),
+      2000,
+    );
 
-  //   return () => clearInterval(sliderInterval);
-  // }, []);
+    return () => clearInterval(sliderInterval);
+  }, []);
 
   return (
     <section className="flex h-[calc(100vh-6rem)] flex-col bg-fuchsia-50 md:h-[calc(100vh-9rem)] lg:flex-row">

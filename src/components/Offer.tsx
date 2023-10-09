@@ -3,7 +3,7 @@ import CountDown from "./CountDown";
 
 function Offer() {
   return (
-    <section className="flex h-screen flex-col bg-black md:h-[70vh] md:flex-row md:justify-between md:bg-[url('/images/offerBg.png')]">
+    <section className="flex h-screen flex-col bg-black md:h-[70vh] md:flex-row md:justify-between md:bg-[url('/offerBg.png')]">
       {/* Text Container */}
       <div className="flex flex-1 flex-col items-center justify-center gap-8 p-6 text-center">
         <h2 className="text-5xl font-bold text-white xl:text-6xl">
@@ -22,7 +22,7 @@ function Offer() {
       {/* Image Container */}
       <div className="relative w-full flex-1 md:h-full">
         <Image
-          src="/images/offerProduct.png"
+          src="/offerProduct.png"
           alt=""
           fill
           className="object-contain"

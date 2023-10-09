@@ -9,7 +9,7 @@ function LoginPage() {
         {/* Image Container */}
         <div className="relative h-1/3 w-full md:h-full md:w-1/2">
           <Image
-            src="/images/loginBg.png"
+            src="/loginBg.png"
             alt=""
             fill
             className="object-cover"
@@ -22,7 +22,7 @@ function LoginPage() {
           <p>Log into your account or create a new one using social buttons</p>
           <button className="flex gap-4 rounded-md p-4 ring-1 ring-orange-100">
             <Image
-              src="/images/google.png"
+              src="/google.png"
               alt=""
               width={20}
               height={20}
@@ -32,7 +32,7 @@ function LoginPage() {
           </button>
           <button className="flex gap-4 rounded-md p-4 ring-1 ring-orange-100">
             <Image
-              src="/images/facebook.png"
+              src="/facebook.png"
               alt=""
               width={20}
               height={20}

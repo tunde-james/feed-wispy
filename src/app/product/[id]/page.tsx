@@ -4,10 +4,10 @@ import Price from "@/components/Price";
 
 function SingleProductPage() {
   return (
-    <main className="flex h-screen flex-col justify-around p-4 text-red-500 md:flex-row md:items-center md:gap-8 lg:px-20 xl:px-40">
+    <main className="flex h-[calc(100vh-6rem)] flex-col justify-around p-4 text-red-500 md:flex-row md:items-center md:gap-8 lg:px-20 xl:px-40">
       {/* Image Container */}
       {singleProduct.img && (
-        <div className="relative h-1/2 w-full md:h-[70%]">
+        <div className="relative w-full flex-1 md:h-[70%]">
           <Image
             src={singleProduct.img}
             alt=""
@@ -18,7 +18,7 @@ function SingleProductPage() {
       )}
 
       {/* Text Container */}
-      <div className="flex h-1/2 flex-col gap-4 md:h-[70%] md:justify-center md:gap-6 xl:gap-8">
+      <div className="flex flex-1 flex-col gap-4 md:h-[70%] md:justify-center md:gap-6 xl:gap-8">
         <h1 className="text-2xl font-bold uppercase xl:text-4xl">
           {singleProduct.title}
         </h1>

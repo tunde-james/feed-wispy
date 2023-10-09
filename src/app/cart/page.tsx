@@ -8,7 +8,7 @@ function CartPage() {
         {/* Single Item */}
         <div className="mb-4 flex items-center justify-between">
           <Image
-            src="/images/temporary/p1.png"
+            src="/temporary/p1.png"
             alt=""
             width={80}
             height={80}
@@ -26,7 +26,7 @@ function CartPage() {
         {/* Single Item */}
         <div className="mb-4 flex items-center justify-between">
           <Image
-            src="/images/temporary/p1.png"
+            src="/temporary/p1.png"
             alt=""
             width={80}
             height={80}
@@ -44,7 +44,7 @@ function CartPage() {
         {/* Single Item */}
         <div className="mb-4 flex items-center justify-between">
           <Image
-            src="/images/temporary/p1.png"
+            src="/temporary/p1.png"
             alt=""
             width={80}
             height={80}

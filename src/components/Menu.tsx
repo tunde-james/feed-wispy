@@ -21,7 +21,7 @@ const Menu = () => {
   return (
     <div>
       <Image
-        src={isOpen ? "/images/close.png" : "/images/open.png"}
+        src={isOpen ? "/close.png" : "/open.png"}
         alt=""
         width={20}
         height={20}
