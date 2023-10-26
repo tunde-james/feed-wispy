@@ -2,6 +2,7 @@ import Link from "next/link";
 import Menu from "./Menu";
 import CartIcon from "./CartIcon";
 import Image from "next/image";
+import UserSession from "./UserSession";
 
 function Navbar() {
   const user: boolean = false;
@@ -31,11 +32,7 @@ function Navbar() {
           <Image src="/phone.png" alt="" width={20} height={20} />
           <span>123 456</span>
         </div>
-        {!user ? (
-          <Link href="/login">Login</Link>
-        ) : (
-          <Link href="/order">Menu</Link>
-        )}
+        <UserSession />
         <Link href="/cart">
           <CartIcon />
         </Link>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CountDown from "./CountDown";
+// import CountDown from "./CountDown";
 
 function Offer() {
   return (
@@ -13,7 +13,7 @@ function Offer() {
           Progressively simplify effective e-toilers and process-centric methods
           of empowerment. Quickly pontificate parallel
         </p>
-        <CountDown />
+        {/* <CountDown /> */}
         <button className="rounded-md bg-red-500 px-6 py-3 text-white">
           Order Now
         </button>
@@ -21,12 +21,7 @@ function Offer() {
 
       {/* Image Container */}
       <div className="relative w-full flex-1 md:h-full">
-        <Image
-          src="/offerProduct.png"
-          alt=""
-          fill
-          className="object-contain"
-        />
+        <Image src="/offerProduct.png" alt="" fill className="object-contain" />
       </div>
     </section>
   );

@@ -10,12 +10,12 @@ async function getData(category: string) {
     },
   );
 
-  const json = await res.json();
-
   if (!res.ok) {
     const message = `An error had occurred ${res.status}`;
     throw new Error(message);
   }
+
+  const json = await res.json();
 
   return json;
 }

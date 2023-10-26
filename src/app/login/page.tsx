@@ -1,12 +1,21 @@
+"use client";
+
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function LoginPage() {
   const { data, status } = useSession();
+  const router = useRouter();
 
-  console.log("data: " + data);
-  console.log("status: " + status);
+  if (status === "loading") {
+    return <p>Loading...</p>;
+  }
+
+  if (status === "authenticated") {
+    router.push("/");
+  }
 
   return (
     <main className="items center flex h-[calc(100vh-6rem)] justify-center p-4 md:h-[calc(100vh-9rem)]">
